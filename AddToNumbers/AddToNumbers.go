@@ -3,13 +3,7 @@ package main
 import (
 	"fmt"
 	"strconv"
-	// "sync"
 )
-
-//"bufio"
-
-//"os"
-//"strings"
 
 /**
  * Definition for singly-linked list.
@@ -94,17 +88,14 @@ func main() {
 	l2.Next = node */
 
 	l3 := addTwoNumbers(l1.Next, l2.Next)
-	fmt.Println("Результат")
+	fmt.Println("Result")
 	for l3 != nil {
 		fmt.Println(l3.Val)
 		l3 = l3.Next
 	}
 
-
-
 }
 
-// func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	numList := func(l *ListNode) (numStr string) {
 		for l != nil {
