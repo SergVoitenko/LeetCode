@@ -24,11 +24,10 @@ Constraints:
 package main
 
 import (
-	//	"bufio"
+
 	"fmt"
 	"sort"
-	//
-	// "strings"
+
 )
 
 func main() {
@@ -65,27 +64,11 @@ func fourSum(nums []int, target int) [][]int {
 		return sorted_struct[i].key < sorted_struct[j].key
 	})
 
-	/*	if target > 0 {
-		if numMax < target {
-			if numMax <= target/3 {
-				posStart = len(sorted_struct) - 3
-				if posStart < 0 {
-					posStart = 0
-				}
-			} else {
-				numStart = numMax / 3
-				if numStart != 0 {
-					firstStart = true
-				}
-			}
-		}
-	} */
+
 
 	for i := 0; i <= len(sorted_struct)-1; i++ {
 		k1 := sorted_struct[i]
-		//		if firstStart && k1.key < numStart {
-		//			continue
-		//		}
+
 		for j := i; j <= len(sorted_struct)-1; j++ {
 			k2 := sorted_struct[j]
 			if k2.key == k1.key && k2.value < 2 {
