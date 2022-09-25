@@ -40,21 +40,6 @@ func main() {
 	fmt.Print(out)
 }
 
-/*
-	func longestValidParentheses(s string) int {
-		if len(s) == 0 || len(s) == 1{
-			return 0
-		}
-		var lComb int
-		var left, right, maxL int
-
-
-
-
-		return lComb
-	}
-*/
-
 func longestValidParentheses(s string) int {
 	st := []int{-1}
 	var lComb int
