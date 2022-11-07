@@ -26,8 +26,6 @@ Constraints:
 nums contains distinct values sorted in ascending order.
 -10 to the extent 4 <= target <= 10 to the extent 4
 
-
-
 */
 
 package main

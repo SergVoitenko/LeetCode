@@ -75,6 +75,7 @@ func search(nums []int, target int) int {
 			endPos = left
 			find = true
 		}
+		
 		for !find {
 			endPos = (left + right) / 2
 

@@ -61,6 +61,7 @@ func Test_searchInsert(t *testing.T) {
 			want: 4,
 		},
 	}
+	
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			if got := searchInsert(tt.args.nums, tt.args.target); got != tt.want {
